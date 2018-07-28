@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../assets/daylight-environment.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin: 0;
+    color:white;
+}
+
+.overlay {
+    height: 100em;
+    margin: 0;
+    background-color: rgba(152, 186, 242,0.7);
+}
+
+.content {
+    animation: main 1s ease-in-out 0.3s forwards;
+    width: 60%;
+    min-width: 300px;
+    height: 35vh;
+    min-height: 420px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30vh;
+    margin: -600px auto;
+    display: flex;
+
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.text {
+    flex: 1;
+}
+
+.fa-hand-spock{
+    animation: beat 1s ease-in-out infinite;
+}
+
+.column-2 {
+    display: flex;
+    height: 100%;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7) ;
+}
+
+img {
+    transition: all ease-in-out 0.3s;
+    height: 10vw;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.icons a {
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.text h1 {
+    font-size: 30px;
+}
+
+.text h2 {
+    font-size: 20px;
+}
+
+.text p {
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+a:hover {
+    background-color: rgba(0,0,0,0.8);
+    transform: scale(1.1);
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+
+@keyframes main {
+    0% {
+        margin-top: -200px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 15vh;
+        opacity:1;
+    }
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .content {
+        height: 80%;
+    }
+    .column-2 {
+        display: none;
+    }
+    .column-1 {
+        padding: 20px;
+    }
+    .text {
+        margin-top:
+        width: 100%;
+        text-align: center;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
