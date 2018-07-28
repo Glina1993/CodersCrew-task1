@@ -12,7 +12,6 @@ body {
 
 .overlay {
     height: 100em;
-    margin: 0;
     background-color: rgba(152, 186, 242,0.7);
 }
 
@@ -27,7 +26,6 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 30vh;
     margin: -600px auto;
     display: flex;
 
@@ -66,7 +64,6 @@ img {
 .icons {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
 }
 
 .icons a {
