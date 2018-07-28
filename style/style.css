@@ -122,17 +122,12 @@ img:hover {
 
 @media only screen and (max-width: 750px) {
     .content {
-        height: 80%;
+        height: 90%;
     }
     .column-2 {
         display: none;
     }
-    .column-1 {
-        padding: 20px;
-    }
     .text {
-        margin-top:
-        width: 100%;
         text-align: center;
     }
     .icons {
@@ -140,4 +135,14 @@ img:hover {
         justify-content: space-around;
     }
 
+    @keyframes main {
+        0% {
+            margin-top: -200px;
+            opacity: 0;
+        }
+        100% {
+            margin-top: 5vh;
+            opacity:1;
+        }
+    }
 }
