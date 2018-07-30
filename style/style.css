@@ -57,7 +57,7 @@ body {
 img {
     height: 13vw;
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .icons {
@@ -156,7 +156,7 @@ a:hover {
             opacity: 0;
         }
         100% {
-            margin-top: 10%;
+            margin-top: 7vh;
             opacity:1;
         }
     }
